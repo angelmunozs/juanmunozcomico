@@ -1,0 +1,149 @@
+html, body, .container-fluid, .content {
+  height: 100%;
+}
+.content {
+  background: #ECF0F5;
+}
+label.compulsory:after {
+    content: " *";
+    color: #f00;
+}
+.sidenav {
+  background: #222D32;
+  padding: 0px;
+}
+.cajita {
+  background: #fff;
+  padding: 12px 20px 12px 20px;
+  border-left: 2px solid #3C8DBC;
+}
+@media screen and (min-width: 480px) {
+  .sidenav {
+    height: 100%;
+  }
+}
+.actividad {
+  margin-top: 20px;
+}
+.actividad-text {
+  padding-left: 20px;
+}
+.actividad-item {
+  margin-bottom: 3px;
+  background: #fff;
+  padding: 10px 20px 10px 20px;
+  border-left: 2px solid #3C8DBC;
+}
+.actividad-item-title {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.actividad-item-desc {
+  font-size: 0.9em;
+  color: #444;
+}
+.form-signin-heading {
+  margin-top: 100px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #BCE8F1;
+  border-radius: 4px 4px 0px 0px;
+  margin-bottom: 0px;
+  color: #31708F;
+  font-size: 18px;
+  background: #D9EDF7;
+}
+.form-signin {
+  border: 1px solid #BCE8F1;
+  border-radius: 0px 0px 4px 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.form-signin-container {
+  max-width: 400px;
+  text-align: center;
+}
+.section-link a {
+  color: #bbb;
+}
+.nav-pills > li.active {
+  color: #fff;
+  background: #222D32;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .nav-pills > li > a:hover {
+  color: #fff;
+  background: #323D42;
+  border-left: 2px solid #3C8DBC;
+}
+h2 {
+  margin-bottom: 15px;
+  color: #444;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+.nav-pills li a {
+  padding: 12px 30px 12px 30px;
+  border-radius: 0px;
+  border-left: 2px solid transparent;
+}
+.sidenav h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 18px 30px 18px 30px;
+  color: #4B646F;
+  background: #1A2226;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.nav-stacked > li + li {
+  margin-top: 0px;
+}
+.user-info {
+  color: #fff;
+  padding: 12px 30px 12px 30px;
+}
+.user-else {
+  padding-left: 12px;
+}
+.user-image, .user-else, .actividad-image, .actividad-text {
+  display: inline-block;
+  min-height: 50px;
+  vertical-align: top;
+}
+.user-image img, .actividad-image img {
+  border-radius: 50%;
+  margin: 0px;
+  height: 50px;
+  max-width: 50px;
+}
+.btn-logout {
+  background: transparent;
+  border: 0px;
+  color: #888;
+}
+.user-name {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.user-state form {
+  font-size: 13px;
+}
+.user-state {
+  font-size: 11px;
+}
+.fa-circle {
+  color: #3C763D;
+}
+.logout {
+  font-size: 13px;
+  margin-left: 10px;
+}
+.logout a, .logout a:hover, .logout a:focus {
+  color: #777;
+  text-decoration: none;
+}
+.fa-left {
+  padding-right: 10px;
+}
+#deleteImageShow img {
+  max-height: 100px;
+}
