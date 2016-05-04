@@ -26,11 +26,12 @@
 				date_default_timezone_set('Europe/Madrid');
 				$date = date('Y/m/d H:i:s');
 				//	Get data from categories list
-				$query = 'SELECT * FROM categories WHERE id = ' . $_POST['category'];
-				$result = $connection -> query($query);
-				$category = $result -> fetch_array(MYSQLI_ASSOC);
+				$query1 = 'SELECT * FROM categories WHERE id = ' . $_POST['category'];
+				$result1 = $connection -> query($query1);
+				$category = $result1 -> fetch_array(MYSQLI_ASSOC);
 				//	Delete from categories
-				mysqli_query($connection, 'DELETE FROM categories WHERE id = ' . $_POST['category']);
+				$query2 = 'DELETE FROM categories WHERE id = ' . $_POST['category'];
+				$result2 = $connection -> query($query2);
 				//	Delete directory
 				$olddir = realpath(getcwd() . '/../');
 				$olddir .= '/img/' . $category['location'];
