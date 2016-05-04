@@ -28,7 +28,7 @@
 				//	Directorio
 				$miniature_location = realpath(getcwd() . '/../');
 				$miniature_location .= '/' . $_POST['location'];
-				$orignial_location .= str_replace('miniaturas/', '', $miniature_location);
+				$original_location = str_replace('miniaturas/', '', $miniature_location);
 				unlink($miniature_location);
 				unlink($original_location);
 				//	Log action
