@@ -2,7 +2,6 @@
 	//	Inciar sesión
 	session_start();
 	//	Importar funciones y mensajes
-	include('../functions.php');
 	include('../messages.php');
 	//	Comprobar usuario
 	if($_GET['id']) {

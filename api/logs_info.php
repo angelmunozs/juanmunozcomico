@@ -1,7 +1,6 @@
 <?php
 	// Configura los datos de tu cuenta
 	include('../config.php');
-	include('../functions.php');
 	include('../messages.php');
 	session_start();
 	// Conectar a la base de datos

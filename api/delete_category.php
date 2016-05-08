@@ -2,8 +2,26 @@
 	//	Inciar sesión
 	session_start();
 	//	Importar funciones y mensajes
-	include('../functions.php');
 	include('../messages.php');
+	//	Function to delete a directory
+	function deleteDir($dirPath) {
+		if (!is_dir($dirPath)) {
+			throw new InvalidArgumentException("$dirPath must be a directory");
+		}
+		if (substr($dirPath, strlen($dirPath) - 1, 1) != '/') {
+			$dirPath .= '/';
+		}
+		$files = glob($dirPath . '*', GLOB_MARK);
+		foreach ($files as $file) {
+			if (is_dir($file)) {
+				deleteDir($file);
+			}
+			else {
+				unlink($file);
+			}
+		}
+		rmdir($dirPath);
+	}
 	//	Comprobar usuario
 	if($_SESSION['user']) {
 		$user = $_SESSION['user'];
